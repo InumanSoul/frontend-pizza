@@ -34,7 +34,7 @@ const PizzaIndex = () => {
                 </div>
                 <Link to={'/pizza/new'} className="button button--primary">New pizza <i className="fas fa-plus"></i></Link>
             </div>
-            { message.length !== 0 && <ErrorMessage message={message}/> }
+            { message.length !== 0 && <ErrorMessage message={message}/ }
             <div className="pizzas-list">
                 { isLoading ? <p className="text-center">Getting pizzas...</p> :
                     <ul className="ul-reset">
@@ -51,6 +51,8 @@ const PizzaIndex = () => {
                     </ul>
                 }
             </div>
+            {/* Ingredients */}
+            <Link to={'/ingredients'} className="button button--secondary">See ingredients</Link>
         </div>
     </div>
     )
